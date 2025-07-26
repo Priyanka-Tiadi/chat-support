@@ -3,11 +3,15 @@ const express=require('express');
 const fs=require('fs');
 const csv=require('csv-parser');
 const cors=require('cors')
+const mongoose=require('mongoose')
+const Messgae=require('./models/Message')
 
 
 const app=express()
 const PORT=5000;
 app.use(cors())
+mongoose.connect(mongodb+srv://<username>:<password>@cluster0.kjnvn.mongodb.net/myDatabase?retryWrites=true&w=majority
+)
 
 function readCSV(filePath){
 return new Promise((resolve,reject)=>{
