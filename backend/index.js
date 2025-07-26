@@ -12,6 +12,10 @@ const PORT=5000;
 app.use(cors())
 mongoose.connect('mongodb+srv://<db_username>:<db_password>@cluster0.navb1sl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 )
+.then(()=>console.log('mongo connected')
+)
+.catch((err)=>console.log(err)
+)
 
 function readCSV(filePath){
 return new Promise((resolve,reject)=>{

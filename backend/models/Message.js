@@ -4,4 +4,4 @@ const MessageSchema=new mongoose.Schema({
  sender:String,
  text:String,
 })
-module.exports=mongoose.model('User',UserSchema)
+module.exports=mongoose.model('Message',MessageSchema)
