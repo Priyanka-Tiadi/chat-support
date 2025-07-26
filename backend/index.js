@@ -10,7 +10,7 @@ const Messgae=require('./models/Message')
 const app=express()
 const PORT=5000;
 app.use(cors())
-mongoose.connect(mongodb+srv://<username>:<password>@cluster0.kjnvn.mongodb.net/myDatabase?retryWrites=true&w=majority
+mongoose.connect('mongodb+srv://<db_username>:<db_password>@cluster0.navb1sl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 )
 
 function readCSV(filePath){
