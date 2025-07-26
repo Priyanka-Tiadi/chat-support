@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Support Chatbox</title>
+</head>
+<body>
+  <h1>Welcome To E-Commerce Chatbox Interface</h1>
+  <section>
+    <h3> Top 5 sold  products</h3>
+    <button onclick="getTopProducts()">Show</button>
+    <ul id="top-products"></ul>
+  </section>
+  <section>
+    <h3>Order status</h3>
+    <input type="text" id="orderId" placeholder="Enter Order ID"/>
+     <button onclick="getOrderStatus()">check</button>
+    <pre id="order-status"></pre>
+  </section>
+  
+  <section>
+    <h3>check product stock</h3>
+    <input type="text" id="productName" placeholder="Enter Product Name"/>
+    <button onclick="getStock()">check</button>
+    <pre id="stock-status"></pre>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
